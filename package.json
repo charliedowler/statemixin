@@ -1,0 +1,19 @@
+{
+  "name": "StateMixin",
+  "version": "0.1.0",
+  "description": "Fixes issues with the state being set inside REST callbacks that aren't notified of the component being unmounted.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charliedowler/StateMixin.git"
+  },
+  "author": "charliedowler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charliedowler/StateMixin/issues"
+  },
+  "homepage": "https://github.com/charliedowler/StateMixin"
+}
