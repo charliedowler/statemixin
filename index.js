@@ -49,12 +49,8 @@
 
       var originalMethod = this['setState'];
       this['setState'] = function () {
-        if (this.isMounted()) {
-          originalMethod.apply(this, arguments);
-        }
-        else {
-          warn('Caught error: Invariant Violation: replaceState(...): Can only update a mounted or mounting component.');
-        }
+        if (this.isMounted()) originalMethod.apply(this, arguments);
+        else warn('Caught error: Invariant Violation: replaceState(...): Can only update a mounted or mounting component.');
       }.bind(this);
     }
   };
